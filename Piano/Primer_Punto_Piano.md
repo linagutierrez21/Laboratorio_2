@@ -77,6 +77,7 @@ El LDR funciona como divisor de voltaje:
 - Resistencia de 10kΩ → entre A0 y GND
 
 <img width="1280" height="755" alt="image" src="https://github.com/user-attachments/assets/d9515fb2-01f2-4c7e-9ef2-d4f6b4528780" />
+
 <img width="1280" height="1030" alt="image" src="https://github.com/user-attachments/assets/95ba5980-d311-4f15-a6d4-ce466a6fc4d4" />
 
 ---
