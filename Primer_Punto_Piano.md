@@ -36,8 +36,47 @@ Inicialmente, el desarrollo estaba planteado con el microcontrolador **PIC16F887
 - **LED (PWM)** → Pin 10  
 - **Botones** → Pines 2 a 9 (con `INPUT_PULLUP`)  
 - **Fotocelda (LDR)** → A0 (con divisor de voltaje)  
-<img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/3ce60e87-21e7-47f4-b080-2519c54a7bf3" />
 
+<img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/c9ec1ecb-a622-45d6-9cfd-65607d006ba7" />
+
+### Botones (Teclas del piano)
+
+Los botones representan las notas musicales y están conectados de la siguiente forma:
+
+- Botón Do → Pin 2
+- Botón Re → Pin 3
+- Botón Mi → Pin 4
+- Botón Fa → Pin 5
+- Botón Sol → Pin 6
+- Botón La → Pin 7
+- Botón Si → Pin 8
+- Botón Do agudo → Pin 9
+
+Todos los botones están configurados en modo INPUT_PULLUP, por lo tanto:
+
+- Un extremo del botón va al pin digital
+- El otro extremo va a GND
+- Buzzer (Salida de sonido)
+- Terminal positivo del buzzer → Pin 11 del Arduino
+- Terminal negativo → GND
+
+Este componente es el encargado de generar las notas musicales.
+
+- LED (Indicador visual)
+- Ánodo → Pin 10 (PWM)
+- Cátodo → Resistencia (220Ω) → GND
+
+El LED cambia su intensidad dependiendo de la luz ambiental.
+
+### Sensor de luz (LDR)
+
+El LDR funciona como divisor de voltaje:
+
+- Un extremo del LDR → 5V
+- Otro extremo → Pin A0
+- Resistencia de 10kΩ → entre A0 y GND
+
+Este circuito permite medir la intensidad de luz en el entorno.
 ---
 
 ## Funcionamiento
@@ -52,6 +91,7 @@ El sistema opera de la siguiente manera:
   - Modular la frecuencia del sonido.
   - Controlar la intensidad del LED mediante **PWM**.
 
+### El video del funcionamiento esta  montado en la Raiz
 ---
 
 ## Conceptos Aplicados
