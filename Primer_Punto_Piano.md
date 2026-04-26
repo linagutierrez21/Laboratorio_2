@@ -36,6 +36,7 @@ Inicialmente, el desarrollo estaba planteado con el microcontrolador **PIC16F887
 - **LED (PWM)** → Pin 10  
 - **Botones** → Pines 2 a 9 (con `INPUT_PULLUP`)  
 - **Fotocelda (LDR)** → A0 (con divisor de voltaje)  
+<img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/3ce60e87-21e7-47f4-b080-2519c54a7bf3" />
 
 ---
 
