@@ -1,4 +1,4 @@
-# Piano Electrónico con Arduino
+# Piano con Arduino
 
 ---
 
