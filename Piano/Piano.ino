@@ -28,13 +28,13 @@ void loop()
 {
   int luz = analogRead(LDR); // ADC
 
-  // 🔥 MODULACIÓN
+  // MODULACIÓN
   int brillo = map(luz, 0, 1023, 0, 255);
   int variacion = map(luz, 0, 1023, -50, 50);
 
-  int presionado = 0;  // 👈 detecta si hay tecla
+  int presionado = 0;  // detecta si hay tecla
 
-  // 🎹 TECLAS
+  // TECLAS
   if(digitalRead(BUTTON_C) == LOW){
     tone(PIEZO, 262 + variacion);
     presionado = 1;
@@ -71,7 +71,7 @@ void loop()
     noTone(PIEZO);
   }
 
-  // 💡 LED solo cuando hay tecla
+  // LED solo cuando hay tecla
   if(presionado == 1){
     analogWrite(LED, brillo);
   }else{
